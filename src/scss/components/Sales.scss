@@ -1,0 +1,219 @@
+.sales-container {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.08);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.08);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.08);
+  overflow: hidden;
+  position: relative;
+
+  .sales-header {
+    background: var(--color-gradient);
+    border-radius: 20px 20px 0 0;
+    padding: 12px 22px;
+
+    h3 {
+      color: white;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+
+  .sales-table-container {
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      height: 7px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #e5e7ee;
+      border-radius: 10px;
+    }
+
+    .sales-table {
+      border-collapse: collapse;
+      padding: 0 15px;
+  
+      thead {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+  
+        tr {
+        border-bottom: 1px solid rgb(220, 220, 220);
+        
+          th {
+            color: var(--dark-gray);
+            font-weight: 400;
+            padding: 15px 0;
+            text-align: left;
+            white-space: nowrap;
+          }
+  
+          th:first-child {
+            padding-left: 25px;
+          }
+  
+          th:last-child {
+            padding-right: 25px;
+          }
+        }
+      }
+  
+      tbody {
+        display: block;
+        overflow-y: scroll;
+        
+        &.collapsed {
+          max-height: 260px;
+        }
+  
+        &::-webkit-scrollbar {
+          width: 7px;
+        }
+  
+        &::-webkit-scrollbar-thumb {
+          background: #e5e7ee;
+          border-radius: 10px;
+        }
+  
+        tr {
+        border-bottom: 1px solid rgb(220, 220, 220);
+        display: table;
+        table-layout: fixed;
+        min-width: 100%;
+        
+          td {
+            color: var(--light-gray);
+            font-weight: 400;
+            padding: 18px 0;
+            text-align: left;
+            min-width: 200px;
+  
+            &.transaction {
+              color: var(--primary-color);
+  
+              span {
+                position: relative;
+                top: 6px;
+              }
+  
+              &.successful {
+                border-left: 4px solid var(--primary-color);
+              }
+  
+              &.failed {
+                border-left: 4px solid var(--light-gray);
+              }
+            }
+
+            &.payment {
+              padding-left: 35px;
+              position: relative;
+
+              &.credit-card-logo::before {
+                background: url('../../static/svg/mastercard-logo.svg') no-repeat center/contain;
+                content: '';
+                left: 0;
+                height: 22px;
+                margin-top: -2px;
+                position: absolute;
+                width: 35px;
+              }
+            }
+  
+            &.amount-info {
+  
+              .amount {
+                color: var(--primary-color);
+              }
+
+              .deduction {
+                font-size: 14px;
+                
+                .deduction-amount {
+                  color: var(--pink);
+                }
+              }
+            }
+          }
+        }
+      }
+  
+      td:first-child {
+        padding-left: 25px;
+      }
+  
+      td:last-child {
+        padding-right: 25px;
+      }
+    }
+  
+    .table-overlay {
+      background-color: transparent;
+      box-shadow: 0px -90px 32px -49px rgba(255,255,255,0.9) inset;
+      -webkit-box-shadow: 0px -90px 32px -49px rgba(255,255,255,0.9) inset;
+      -moz-box-shadow: 0px -90px 32px -49px rgba(255,255,255,0.9) inset;
+      bottom: 0;
+      height: 70px;
+      position: absolute;
+      width: 100%;
+
+      &.collapsed {
+        height: 40px;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      p {
+        bottom: 10px;
+        color: var(--primary-color);
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 500;
+        left: 14px;
+        position: absolute;
+
+        span {
+          font-size: 18px;
+          position: relative;
+          top: 3px;
+        }
+
+        &:hover {
+          color: #7d3858;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .sales-container {
+  
+    .sales-header h3 {
+      font-size: 21px;
+      text-align: left;
+    }
+
+    .sales-table-container .table-overlay {
+
+      p {
+        left: unset;
+        right: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sales-container {
+  
+    tbody tr {
+      width: 100%;
+    }
+  }
+}

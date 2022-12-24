@@ -1,0 +1,359 @@
+[
+  {
+    "id": 1,
+    "boldId": "GZEN23784UBV2",
+    "payment": {
+      "method": "credit card",
+      "info": "**** **** **** 7711"
+    },
+    "amount": {
+      "value": "$945.000",
+      "deduction": true,
+      "deductionValue": "$1.500"
+    },
+    "dateTime": {
+      "date": "24/12/2022",
+      "time": "17:14:24"
+    },
+    "transaction": {
+      "state": "Cobro exitoso",
+      "type": "link"
+    }
+  },
+  {
+    "id": 2,
+    "boldId": "GZEN23784UBV2",
+    "payment": {
+      "method": "credit card",
+      "info": "**** **** **** 7711"
+    },
+    "amount": {
+      "value": "$20.000",
+      "deduction": true,
+      "deductionValue": "$1.500"
+    },
+    "dateTime": {
+      "date": "22/12/2022",
+      "time": "17:14:24"
+    },
+    "transaction": {
+      "state": "Cobro exitoso",
+      "type": "datafono"
+    }
+  },
+  {
+    "id": 3,
+    "boldId": "GZEN23784UBV2",
+    "payment": {
+      "method": "credit card",
+      "info": "**** **** **** 7711"
+    },
+    "amount": {
+      "value": "$20.000",
+      "deduction": false,
+      "deductionValue": null
+    },
+    "dateTime": {
+      "date": "21/12/2022",
+      "time": "17:14:24"
+    },
+    "transaction": {
+      "state": "Cobro no realizado",
+      "type": "datafono"
+    }
+  },
+  {
+    "id": 4,
+    "boldId": "GZEN23784UBV2",
+    "payment": {
+      "method": "credit card",
+      "info": "**** **** **** 7711"
+    },
+    "amount": {
+      "value": "$25.000",
+      "deduction": true,
+      "deductionValue": "$1.500"
+    },
+    "dateTime": {
+      "date": "04/12/2022",
+      "time": "17:14:24"
+    },
+    "transaction": {
+      "state": "Cobro exitoso",
+      "type": "link"
+    }
+  },
+  {
+    "id": 5,
+    "boldId": "GZEN23784UBV2",
+    "payment": {
+      "method": "credit card",
+      "info": "**** **** **** 7711"
+    },
+    "amount": {
+      "value": "$245.000",
+      "deduction": true,
+      "deductionValue": "$1.500"
+    },
+    "dateTime": {
+      "date": "04/12/2022",
+      "time": "17:14:24"
+    },
+    "transaction": {
+      "state": "Cobro exitoso",
+      "type": "link"
+    }
+  },
+  {
+    "id": 6,
+    "boldId": "GZEN23784UBV2",
+    "payment": {
+      "method": "credit card",
+      "info": "**** **** **** 7711"
+    },
+    "amount": {
+      "value": "$25.000",
+      "deduction": false,
+      "deductionValue": null
+    },
+    "dateTime": {
+      "date": "30/11/2022",
+      "time": "17:14:24"
+    },
+    "transaction": {
+      "state": "Cobro no realizado",
+      "type": "link"
+    }
+  },
+  {
+    "id": 7,
+    "boldId": "GZEN23784UBV2",
+    "payment": {
+      "method": "credit card",
+      "info": "**** **** **** 7711"
+    },
+    "amount": {
+      "value": "$25.000",
+      "deduction": false,
+      "deductionValue": null
+    },
+    "dateTime": {
+      "date": "30/11/2022",
+      "time": "17:14:24"
+    },
+    "transaction": {
+      "state": "Cobro no realizado",
+      "type": "datafono"
+    }
+  },
+  {
+    "id": 8,
+    "boldId": "GZEN23784UBV2",
+    "payment": {
+      "method": "credit card",
+      "info": "**** **** **** 7711"
+    },
+    "amount": {
+      "value": "$205.000",
+      "deduction": false,
+      "deductionValue": null
+    },
+    "dateTime": {
+      "date": "3/10/2022",
+      "time": "17:14:24"
+    },
+    "transaction": {
+      "state": "Cobro exitoso",
+      "type": "datafono"
+    }
+  },
+  {
+    "id": 9,
+    "boldId": "GZEN23784UBV2",
+    "payment": {
+      "method": "credit card",
+      "info": "**** **** **** 7711"
+    },
+    "amount": {
+      "value": "$25.000",
+      "deduction": false,
+      "deductionValue": null
+    },
+    "dateTime": {
+      "date": "26/09/2022",
+      "time": "17:14:24"
+    },
+    "transaction": {
+      "state": "Cobro no realizado",
+      "type": "link"
+    }
+  },
+  {
+    "id": 10,
+    "boldId": "GZEN23784UBV2",
+    "payment": {
+      "method": "credit card",
+      "info": "**** **** **** 7711"
+    },
+    "amount": {
+      "value": "$95.000",
+      "deduction": false,
+      "deductionValue": null
+    },
+    "dateTime": {
+      "date": "18/08/2022",
+      "time": "17:14:24"
+    },
+    "transaction": {
+      "state": "Cobro exitoso",
+      "type": "link"
+    }
+  },
+  {
+    "id": 11,
+    "boldId": "GZEN23784UBV2",
+    "payment": {
+      "method": "credit card",
+      "info": "**** **** **** 7711"
+    },
+    "amount": {
+      "value": "$588.000",
+      "deduction": false,
+      "deductionValue": null
+    },
+    "dateTime": {
+      "date": "26/07/2022",
+      "time": "17:14:24"
+    },
+    "transaction": {
+      "state": "Cobro no realizado",
+      "type": "datafono"
+    }
+  },
+  {
+    "id": 12,
+    "boldId": "GZEN23784UBV2",
+    "payment": {
+      "method": "credit card",
+      "info": "**** **** **** 7711"
+    },
+    "amount": {
+      "value": "$25.000",
+      "deduction": false,
+      "deductionValue": null
+    },
+    "dateTime": {
+      "date": "26/06/2022",
+      "time": "17:14:24"
+    },
+    "transaction": {
+      "state": "Cobro no realizado",
+      "type": "link"
+    }
+  },
+  {
+    "id": 13,
+    "boldId": "GZEN23784UBV2",
+    "payment": {
+      "method": "credit card",
+      "info": "**** **** **** 7711"
+    },
+    "amount": {
+      "value": "$256.000",
+      "deduction": false,
+      "deductionValue": null
+    },
+    "dateTime": {
+      "date": "26/05/2022",
+      "time": "17:14:24"
+    },
+    "transaction": {
+      "state": "Cobro no realizado",
+      "type": "datafono"
+    }
+  },
+  {
+    "id": 14,
+    "boldId": "GZEN23784UBV2",
+    "payment": {
+      "method": "credit card",
+      "info": "**** **** **** 7711"
+    },
+    "amount": {
+      "value": "$775.000",
+      "deduction": false,
+      "deductionValue": null
+    },
+    "dateTime": {
+      "date": "26/04/2022",
+      "time": "17:14:24"
+    },
+    "transaction": {
+      "state": "Cobro no realizado",
+      "type": "link"
+    }
+  },
+  {
+    "id": 15,
+    "boldId": "GZEN23784UBV2",
+    "payment": {
+      "method": "credit card",
+      "info": "**** **** **** 7711"
+    },
+    "amount": {
+      "value": "$1'999.000",
+      "deduction": false,
+      "deductionValue": null
+    },
+    "dateTime": {
+      "date": "26/03/2022",
+      "time": "17:14:24"
+    },
+    "transaction": {
+      "state": "Cobro exitoso",
+      "type": "link"
+    }
+  },
+  {
+    "id": 16,
+    "boldId": "GZEN23784UBV2",
+    "payment": {
+      "method": "credit card",
+      "info": "**** **** **** 7711"
+    },
+    "amount": {
+      "value": "$25.000",
+      "deduction": false,
+      "deductionValue": null
+    },
+    "dateTime": {
+      "date": "8/02/2022",
+      "time": "17:14:24"
+    },
+    "transaction": {
+      "state": "Cobro no realizado",
+      "type": "link"
+    }
+  },
+  {
+    "id": 17,
+    "boldId": "GZEN23784UBV2",
+    "payment": {
+      "method": "credit card",
+      "info": "**** **** **** 7711"
+    },
+    "amount": {
+      "value": "$105.000",
+      "deduction": false,
+      "deductionValue": null
+    },
+    "dateTime": {
+      "date": "21/01/2022",
+      "time": "17:14:24"
+    },
+    "transaction": {
+      "state": "Cobro realizado",
+      "type": "link"
+    }
+  }
+]

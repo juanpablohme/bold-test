@@ -1,0 +1,158 @@
+header {
+  align-items: center;
+  background: var(--color-gradient);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px;
+  position: relative;
+
+  .header-logo {
+    width: 80px;
+  }
+
+  .open-menu {
+    color: white;
+    font-size: 30px;
+  }
+
+  .menu-overlay {
+    box-shadow: -22px 0px 25px -8px rgba(0,0,0,0.5) inset;
+    -webkit-box-shadow: -22px 0px 25px -8px rgba(0,0,0,0.5) inset;
+    -moz-box-shadow: -22px 0px 25px -8px rgba(0,0,0,0.5) inset;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    z-index: 3;
+
+    &.opened {
+      left: 0;
+      transition: 0.25s;
+    }
+
+    &.closed {
+      left: 100%;
+      transition: 0.25s;
+    }
+  }
+
+  nav {
+    background-color: #111f6cfb;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    z-index: 3;
+
+    &.opened {
+      left: 50%;
+      transition: 0.25s;
+    }
+
+    &.closed {
+      left: 100%;
+      transition: 0.25s;
+    }
+
+    .close-menu {
+      color: white;
+      font-size: 28px;
+      left: calc(100% - 48px);
+      position: relative;
+      top: 20px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+
+      li {
+        display: inline-block;
+        margin-bottom: 30px;
+        margin-left: 30px;
+
+        a {
+          color: white;
+
+          span {
+            border: 1px solid white;
+            border-radius: 50%;
+            display: inline-block;
+            font-size: 10px;
+            margin-top: 4px;
+            position: relative;
+            text-align: center;
+            top: -2px;
+            height: 15px;
+            width: 15px;
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  header {
+  
+    .menu-overlay {
+      width: 65%;
+    }
+
+    nav {
+      width: 35%;
+
+      &.opened {
+        left: 65%;
+      }
+  
+      &.closed {
+        left: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 15px 40px;
+  
+    .header-logo {
+      width: 100px;
+    }
+  
+    .open-menu {
+      display: none;
+    }
+  
+    .menu-overlay {
+      display: none;
+    }
+  
+    nav {
+      background-color: transparent;
+      height: 100%;
+      position: unset;
+      width: auto;
+  
+      .close-menu {
+        display: none;
+      }
+  
+      ul {
+        flex-direction: row;
+        margin-top: 0;
+  
+        li {
+          margin-bottom: 0;
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+}

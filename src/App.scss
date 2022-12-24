@@ -1,0 +1,44 @@
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 20px;
+
+  section {
+    margin-bottom: 30px;
+    max-width: 100%;
+
+    &.earnings-section {
+      width: 100%;
+    }
+
+    &.filters-section {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+  main {
+    padding: 50px;
+
+    section {
+      margin-bottom: 30px;
+
+      &.earnings-section {
+        width: 30%;
+      }
+
+      &.filters-section {
+        align-items: flex-end;
+        width: 66%;
+      }
+    }
+  }
+}
